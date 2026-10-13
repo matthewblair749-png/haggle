@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Haggle",
+    "slug": "haggle",
+    "scheme": "haggle",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFFBF2",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "app.haggle"
+    },
+    "android": {
+      "package": "app.haggle",
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFBF2",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font",
+      ["expo-audio", { "microphonePermission": false }],
+      ["expo-splash-screen", { "backgroundColor": "#FFFBF2", "image": "./assets/splash-icon.png", "imageWidth": 160 }]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
